@@ -1,0 +1,26 @@
+- links:
+  - name: Méthodologie
+    link: /gboml/
+  - name: Modèle
+    link: /model/
+  - name: Résultats
+    link: /blog/
+  - name: A propos
+    link: /about/
+- links:
+  - name: Gitlab
+    link: https://gitlab.uliege.be/smart_grids/public/gboml
+    new_window: true
+    social_icon: gitlab
+  - name: Uliege
+    link: https://www.uliege.be
+    social_icon: website
+    new_window: true
+  - name: Fluxys
+    link: https://www.fluxys.com/#/
+    social_icon: website
+    new_window: true
+  - name: Contact
+    social_icon: contact
+    link: /contact/
+    new_window: false
