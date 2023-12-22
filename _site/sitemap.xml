@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/sales/tips/2020/07/28/sensitivity4/</loc>
-<lastmod>2020-07-28T00:00:00+00:00</lastmod>
+<loc>/sales/tips/2020/07/20/all_data/</loc>
+<lastmod>2020-07-20T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>/sales/tips/2020/07/23/sensitivity5/</loc>
+<lastmod>2020-07-23T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>/sales/tips/2020/07/29/sensitivity4/</loc>
+<lastmod>2020-07-29T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>/sales/2022/06/01/sensitivity3/</loc>
 <lastmod>2022-06-01T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/sales/tips/2022/06/02/sensitivity2/</loc>
+<loc>/2022/06/02/sensitivity2/</loc>
 <lastmod>2022-06-02T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/hydrogen/2023/06/28/sensitivity1/</loc>
+<loc>/2023/06/28/sensitivity1/</loc>
 <lastmod>2023-06-28T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -46,6 +54,12 @@
 </url>
 <url>
 <loc>/category/tips/</loc>
+</url>
+<url>
+<loc>/category/</loc>
+</url>
+<url>
+<loc>/category/</loc>
 </url>
 <url>
 <loc>/category/hydrogen/</loc>

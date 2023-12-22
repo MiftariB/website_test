@@ -1,25 +1,34 @@
 ---
 date: 2023-06-28
-title: Analyse de sensitivité 1 
+title: Sensitivity 1 – High renewable potential
 categories:
-  - Hydrogen
+  - 
 author_staff_member: 
 ---
 <div class="image">
     <img src="{{ site.baseurl }}/images/base1.png" alt="Screenshot"/>
 </div>
-Résumé: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut. Diam sit amet nisl suscipit adipiscing bibendum. Quis ipsum suspendisse ultrices gravida dictum fusce. Tristique risus nec feugiat in fermentum posuere urna nec. Scelerisque felis imperdiet proin fermentum leo. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Viverra vitae congue eu consequat ac felis donec et. Et pharetra pharetra massa massa ultricies mi. Velit scelerisque in dictum non consectetur a erat. Arcu dictum varius duis at. Volutpat ac tincidunt vitae semper quis lectus nulla. Scelerisque eu ultrices vitae auctor eu augue. In pellentesque massa placerat duis. Lobortis feugiat vivamus at augue eget arcu dictum. Et molestie ac feugiat sed lectus vestibulum mattis. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.
 
+### Main parameters
+As the potential of wind onshore and wind offshore is fully installed in the base case, this sensitivity analyses whether higher capacities would be installed in an optimal energy system if the potential would be higher.
+All parameters are identical to the base case, except the potential for renewable electricity in Belgium in 2050, which is now set according to an Energyville study [add note]:
+ - Solar PV:  103.3 GW
+ - Onshore wind: 20.5 GW
+ - Offshore wind: 9.3 GW
+ 
 # Table des matières
-- [<font size="5">Analyse</font>](#analyse) 
-- [<font size="5">Résultats intéractifs</font>](#résultats-intéractifs) 
-
-# Analyse
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut. Diam sit amet nisl suscipit adipiscing bibendum. Quis ipsum suspendisse ultrices gravida dictum fusce. Tristique risus nec feugiat in fermentum posuere urna nec. Scelerisque felis imperdiet proin fermentum leo. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Viverra vitae congue eu consequat ac felis donec et. Et pharetra pharetra massa massa ultricies mi. Velit scelerisque in dictum non consectetur a erat. Arcu dictum varius duis at. Volutpat ac tincidunt vitae semper quis lectus nulla. Scelerisque eu ultrices vitae auctor eu augue. In pellentesque massa placerat duis. Lobortis feugiat vivamus at augue eget arcu dictum. Et molestie ac feugiat sed lectus vestibulum mattis. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.
+- [<font size="5">Key conclusions</font>](#key-conclusions) 
+- [<font size="5">Interactive results</font>](#interactive-results) 
+- [<font size="5">Notes</font>](#notes) 
 
 
-# Résultats intéractifs
+# Key conclusions
+[… text to add]
+
+# Interactive results
 
 <iframe title="test" width="100%" height="800px%" src="https://app.powerbi.com/view?r=eyJrIjoiNTFmYTkzZDgtNTg4Ny00NWJjLWEzZDQtNmEwODZiMjE0ODhmIiwidCI6IjYyZTEzYjg0LTE5NjAtNDU2Mi04YzdmLTcyNDcyOTUxZGE4ZiIsImMiOjl9&pageName=ReportSection412dbc12e2bf19fc8531" frameborder="0" allowFullScreen="true"></iframe>
 
-Bonjour voici un apercu de ce qu'on peut faire et comment on va montrer les résultats
+# Notes
+
+F. M.-H. Wim Clymans Karolien Vermeiren. “How much renewable energy can be generated within the belgian borders? (dynamic energy atlas)”, 2021, available online at https://www.energyville.be/en/press/how-much-renewable-electricity-can-be-generated-withinbelgian-borders-dynamic-energy-atlas (visited on 09/08/2022).

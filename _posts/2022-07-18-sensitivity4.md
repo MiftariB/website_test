@@ -1,6 +1,6 @@
 ---
-date: 2020-07-28
-title: Analyse de sensitivité 4
+date: 2020-07-29
+title: Sensitivity 4 – H2 import cost
 categories:
   - sales
   - tips

@@ -1,10 +1,6 @@
 ---
 date: 2022-06-02
-title: Analyse de sentivité 2
-categories:
-  - sales
-  - tips
-author_staff_member: gerald
+title: Sensitivity 2 – Farther offshore wind
 ---
 <div class="image">
     <img src="{{ site.baseurl }}/images/base1.png" alt="Screenshot"/>
@@ -21,6 +17,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Résultats intéractifs
 
-<iframe title="test" width="100%" height="800px%" src="https://app.powerbi.com/view?r=eyJrIjoiNTFmYTkzZDgtNTg4Ny00NWJjLWEzZDQtNmEwODZiMjE0ODhmIiwidCI6IjYyZTEzYjg0LTE5NjAtNDU2Mi04YzdmLTcyNDcyOTUxZGE4ZiIsImMiOjl9&pageName=ReportSection412dbc12e2bf19fc8531" frameborder="0" allowFullScreen="true"></iframe>
-
+<iframe title="Report Section" width="600" height="373.5" src=https://app.powerbi.com/view?r=eyJrIjoiMTI1MGNiNWYtZDA4Yi00NjIwLTk3MjMtMDU5NjMwZGEyZTlmIiwidCI6ImRkOTczZjdjLTg0ZjUtNDcwYi05MWQwLTA0M2JlZTg3ZTA3ZiIsImMiOjh9 frameborder="0" allowFullScreen="true"></iframe>
 Bonjour voici un apercu de ce qu'on peut faire et comment on va montrer les résultats

@@ -1,9 +1,10 @@
 ---
-date: 2022-06-01
-title: Sensitivity 3 – CO2 budget
+date: 2020-07-23
+title: Sensitivity 5 – CO2 export capacity
 categories:
   - sales
-author_staff_member: james
+  - tips
+author_staff_member: betty
 ---
 <div class="image">
     <img src="{{ site.baseurl }}/images/base1.png" alt="Screenshot"/>

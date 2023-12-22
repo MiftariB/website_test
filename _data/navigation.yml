@@ -1,16 +1,16 @@
-- name: Méthodologie
+- name: Methodology
   link: /gboml/
   new_window: false
   highlight: false
-- name: Modèle
+- name: System
   link: /model/
   new_window: false
   highlight: false
-- name: Résultats
+- name: Results
   link: /blog/
   new_window: false
   highlight: false
-- name: A propos
+- name: About
   link: /about/
   new_window: false
   highlight: false

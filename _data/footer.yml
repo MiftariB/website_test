@@ -1,11 +1,11 @@
 - links:
-  - name: Méthodologie
+  - name: Methodology
     link: /gboml/
-  - name: Modèle
+  - name: System
     link: /model/
-  - name: Résultats
+  - name: Results
     link: /blog/
-  - name: A propos
+  - name: About
     link: /about/
 - links:
   - name: Gitlab
