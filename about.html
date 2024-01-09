@@ -1,25 +1,48 @@
 ---
-title: A propos
+title: About
 description: >-
 ---
 
 <div class="blog-post text-container">
 	<div class="container">
 		<div class="text editable">
-			<h2>L'équipe SmartGrids de L'Uliège</h2>
+			<h2>The project</h2>
 			<p style="text-align:justify">
-				Damien Ernst PR
+				Fluxys Belgium and ULiège have worked on the INTEGRATION project over the period 2020-2024, supported by the Energy Transition Fund of the Belgian federal government. INTEGRATION stands for “INTeraction Electricité, Gaz et autres Réseaux énergétiques : modélisAtion, opTi-misation, Investissements et régulatiON”.
+				The project aims at developing a methodology to model and optimize energy systems by 2050, taking all energy networks and demand sectors into account. The methodology focuses primarily on the interaction between gas and electricity because of the increasingly important role of gas – methane, hydrogen – to ensure security of supply in Belgium. Conversion technologies like power-to-gas and gas-to-power enable energy system integration – a dynamic interaction between electricity and gas systems enabling optimisation across energy carriers through markets.
+				The methodology is used to calculate an optimal energy system with the minimal total cost – annualized investments, operations – under constraints, e.g. reduced or net-zero CO2 emissions. To achieve that goal, green or low-carbon energy is produced in Belgium or imported: green electricity from wind, sun and hydro; green methane from biomethane or synthetic methane; green hydrogen from electrolysis of green electricity. Each technology can be deployed up to a maximum capacity, reflecting e.g. spatial constraints. In order to achieve net-zero CO2 emissions, low-carbon gas and electricity is also complemented with carbon capture and storage.
+				The methodology has been applied on Belgium’s energy system in 2050. Electricity and molecules (methane, hydrogen) are expected to be the main energy carriers. The methodology allows to calculate optimal investments in every technology – production, transport, conversion, storage – that ensure security of supply, competitiveness and sustainability.
+				Several scientific publications have been published in the framework of the INTEGRATION project. See [Methodology] section for further details. This demonstration website is part of the deliverables of the INTEGRATION project.
 			</p>
-			<h2>L'équipe Fluxys</h2>
+			<h2>How to use PowerBI graphs?</h2>
 			<p style="text-align:justify">
-				...
+				Each PowerBI screen shows a graph with selectors above it that allow you to select part of the data, and shows summary results on the right side.
+				When the mouse stays on an item of the graph, a pop-up screen shows the characteristics of that item. By clicking on a legend item, the related data is highlighted on the graph and the summary results on the right side reflect the selected legend item.
+				There are several selectors:
 			</p>
-			<h2>Les publications scientifiques liés au projet</h2>
-			<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut. Diam sit amet nisl suscipit adipiscing bibendum. Quis ipsum suspendisse ultrices gravida dictum fusce. Tristique risus nec feugiat in fermentum posuere urna nec. Scelerisque felis imperdiet proin fermentum leo. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Viverra vitae congue eu consequat ac felis donec et. Et pharetra pharetra massa massa ultricies mi. Velit scelerisque in dictum non consectetur a erat. Arcu dictum varius duis at. Volutpat ac tincidunt vitae semper quis lectus nulla. Scelerisque eu ultrices vitae auctor eu augue. In pellentesque massa placerat duis. Lobortis feugiat vivamus at augue eget arcu dictum. Et molestie ac feugiat sed lectus vestibulum mattis. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.
+			<ul>
+				<li> Commodity: select Electricity, Hydrogen or Methane or all, depending on the graph</li>
+				<li> Cluster: select INALND, COASTAL, OFFSHORE, INTERCLUSTER (for grid capacities) or all, depending on the graph:</li>
+				<li> Date: Zoom in the calendar year by moving the circles:</li>
+				<li> Year/Month/Day view: the default view is the Month; click on the left upper arrow to go up one level; click to the middle down arrow to go down one level:</li>
+			</ul>
+			<p>
+				The following graphs are presented in the “Base Case” section and in the “All data” section:
 			</p>
-			<h2>Les liens utiles</h2>
-			<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut. Diam sit amet nisl suscipit adipiscing bibendum. Quis ipsum suspendisse ultrices gravida dictum fusce. Tristique risus nec feugiat in fermentum posuere urna nec. Scelerisque felis imperdiet proin fermentum leo. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Viverra vitae congue eu consequat ac felis donec et. Et pharetra pharetra massa massa ultricies mi. Velit scelerisque in dictum non consectetur a erat. Arcu dictum varius duis at. Volutpat ac tincidunt vitae semper quis lectus nulla. Scelerisque eu ultrices vitae auctor eu augue. In pellentesque massa placerat duis. Lobortis feugiat vivamus at augue eget arcu dictum. Et molestie ac feugiat sed lectus vestibulum mattis. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.
-			</p>
+			<ul>
+				<li> Energy Balance: for the chosen commodity (electricity, methane, hydrogen), the quantities above the axis are provided to the system – production, imports, conversion (in), storage (in) –, while the quantities below the axis are taken out from the system –consumption, exports, conversion (out), storage (out); quantities are in TWh;</li>
+				<li> Capacities: installed capacities (existing + new) for every technology, sorted in decreasing order; quantities are in GW of output capacity, or GWh for storage capacity; [separate graph in GW and in GWh???]</li>
+				<li> CO2 balance: the quantities above the axis show CO2 emissions, while the quantities below the axis show CO2 removals or compensations (e.g. biomethane); quantities in kt;</li>
+				<li> Cost overview: the total (annualized) system cost is displayed by commodity on the left side; a detailed view by technology is provided on the right side, sorted by decreasing values; cost is in M€/year is displayed;</li>
+				<li> State of charge: quantity of commodity over time for each storage technology; quantities are in GWh for commodities or kt for CO2;</li>
+				<li> Marginal cost: for each commodity and each hour, the calculates the marginal cost – this should reflect the market value; cost is in €/MWh; the CO2 value reflects the abatement cost of CO2</li>
+			</ul>
+			<h2>Contact</h2>
+			<p style="text-align:justify">For all question related to the INTEGRATION project, please contact:</p>
+			<ul>
+				<li> Juan Vazquez, official contact person, Fluxys, juan.vazquez@fluxys.com </li>
+				<li> Damien Ernst, Professor, ULiège, dernst@uliege.be</li>
+			</ul>
 		</div>
 	</div>
 </div>

@@ -8,15 +8,30 @@ categories:
 <div class="blog-post text-container">
 	<div class="container">
 		<div class="text editable">
-			<h2>INTEGRATION project</h2>
+			<p>The complete mathematical formulation of the energy system is described in [Jocelyn’s paper]. Here are the main principles of the methodology defined to model the complete energy system.</p>
+			<h2>Topology</h2>
 			<p style="text-align:justify">
-				Fluxys Belgium and ULiège have worked on the INTEGRATION project over the period 2020-2024, supported by the Energy Transition Fund of the Belgian federal government. This demonstration website is part of the deliverables of the project.
-				INTEGRATION stands for “INTeraction Electricité, Gaz et autres Réseaux énergétiques : modélisAtion, opTi-misation, Investissements et régulatiON”.
-				This project aims at developing a methodology to model and optimize energy systems by 2050, taking all energy networks and demand sectors into account. The methodology focuses primarily on the interaction between gas and electricity because of the increasingly important role of gas – methane, hydrogen – to ensure security of supply in Belgium. Conversion technologies like power-to-gas and gas-to-power enable energy system integration – a dynamic interaction between electricity and gas systems that ensures system adequacy and optimizes competitiveness, sustainability and security of supply.
-				The methodology is used to calculate an optimal energy system as the system with the minimal total cost – annualized investments, operations – under constraints, e.g. reduced or net-zero CO2 emissions. To achieve that goal, green or low-carbon energy is produced in Belgium or imported: green electricity from wind, sun and hydro; green methane from biomethane or synthetic methane; green hydrogen from electrolysis of green electricity. In order to achieve net-zero CO2 emissions, low-carbon gas and electricity is also produced with carbon capture and storage.
-				The complete methodology of the optimisation problem is described in [ref. to Jocelyn paper].
-
+				The optimization problem is described as a hierarchical hypergraph composed of nodes connected by hyperedges. Each node can be seen as an optimization sub-problem with its own sets of parameters, variables, constraints, local objectives and its own sub-hypergraph. Constraints composed of variables from different nodes can then be defined in a hyperedge to connect different nodes.
+				Nodes typically represent a technology or a process. 5 generic nodes model 5 types of technologies or processes:
 			</p>
+			<ul>
+				<li> Conversion nodes, converting a set of commodities into another set via a technology or process, taking into account conversion factors between commodities, capacity constraints, maximum deployable capacity, ramp-up and ramp-down constraints;</li>
+				<li> Flexibility nodes, maintaining equilibrium between production and demand, including storage and demand-side response mechanisms (load shedding and load shifting), taking account of round-trip efficiency, injection and withdrawal constraints, storage capacity constraints</li>
+				<li> Import/export nodes, importing/exporting commodity from/to neighbouring countries, taking account of capacity constraints, maximum yearly import/export of commodity;</li>
+				<li> Transmission nodes, transporting energy via electrical lines, methane pipelines and hydrogen pipelines, taking account of capacity constraints (in forward and/or reverse flow), maximum deployable capacity;</li>
+				<li> Demand nodes, consuming commodity according to yearly quantities defined in the Distributed Energy scenario of ENTSOG/ENTSO-E’s TYNDP 2022 and to hourly profiles defined in [???]; if demand cannot be supplied, a high “Energy Not Served” cost is added to the total system cost.</li>
+			</ul>
+			<p>A sixth node type, referred to as “cluster”, connects nodes and clusters producing/importing or consuming/exporting the same commodity and ensure the balance of flows for a commodity.
+				Simulations are carried out on a one-year calendar period, with hourly resolution. Production profiles for sun and wind use [2009?] historical time series.
+			</p>
+			<h2>Main assumptions</h2>
+			<p> The model is based on several key assumptions: </p>
+			<ul>
+				<li> Central planning and operation. A single entity “system operator” makes investment decisions and manages the system with the aim of minimizing total system cost.</li>
+				<li> Perfect foresight and knowledge. The system operator has complete knowledge and foresight: he knows all technical and economic aspects as well as weather events and demand patterns.</li>
+				<li> Optimal investment and operational decisions. Investment decisions are made at the start of the time horizon and assets are immediately available. Hourly time steps are used to make operational decisions. Both the operational and investment decisions are resolved at the same time.</li>
+				<li> Models for technologies and process. Input-output relations express mass and energy balances in order to size and operate each technology. Efficiencies, capacity constraints and ramp-up / ramp-down constraints are simulated. Storage systems assume that the filling level is the same at the beginning and at the end of the year, and take round-trip efficiency into account.</li>
+			</ul>
 		</div>
 	</div>
 	<div class="container2 flex">
@@ -25,7 +40,7 @@ categories:
 			<p style="text-align:justify">
 				In the framework of the INTEGRATION project, GBOML – Graph-Based Optimization Modeling Language – has been developed to describe the topology and parameters of energy system optimisation problems. [add ref.] A compiler processes GBOML files, feeds a linear optimizer and gets results that can be analysed. The results include the optimal capacity to build for each technology, the optimal use of each technology hour by hour, the cost of the energy system and each technology, the “Energy Not Served” and the “Curtailment” of variable renewable electricity.
 				The GBOML grammar and the compiler are open-source. They are available at [ref. to Orbi].
-				This demonstrator uses the GBOML language to process the Belgian energy system in 2050 and to get results that are presented and illustrated with graphs.
+				This demonstrator uses the GBOML language to process the Belgian energy system in 2050 and to get results that are presented and illustrated with graphs in the “Simulations” section.
 			</p>
 		</div>
 		<div class="image">
@@ -36,20 +51,21 @@ categories:
 		<div class="text editable">
 			<h2>System description</h2>
 			<p style="text-align:justify">
-				The methodology is applied for Belgium’s energy system in 2050. The topology and parameters are described in [“System description” section]. It aims at a net-zero energy system composed of electricity, methane and hydrogen (including derivates like ammonia or methanol).
+				The methodology is applied on Belgium’s energy system in 2050. The topology and parameters are described in the [“System description” section]. It aims at a net-zero energy system composed of electricity, methane and hydrogen (including derivates like ammonia or methanol).
 			</p>
-			<h2>Base case and Sensitivities</h2>
+			<h2>Simulations: Base case and Sensitivities</h2>
 			<p style="text-align:justify">
-				The main results of Belgium’s energy system in 2050 are presented in the “Base Case” section with PowerBI screens that help to analyse detailed results of the optimal energy system.
-				Some parameters of the base case have been modified to show how they influence results. These sensitivities are presented in the respective sections with PowerBI screens highlighting the changes:
+				The main results of Belgium’s energy system in 2050 are presented in the “Base Case” section with PowerBI graphs that help to analyse the detailed results of the optimal energy system.
+				Some parameters of the base case have been modified to analyse how they influence results. These sensitivities are presented in the respective sections with PowerBI screens highlighting the changes:
 				<ul style="text-align:justify">
 				  <li>Sensitivity 1 “High renewable potential”: the potential of solar PV, onshore and offshore wind is increased in order to test the limits of integration of variable RES into the energy system;</li>
 				  <li>Sensitivity 2: “Farther offshore wind”: the distance of offshore wind is increased to highlight when it is more interesting to produce hydrogen offshore rather than onshore</li>
-				  <li>Sensitivity 3: “CO2 budget”: […]</li>
-				  <li>Sensitivity 4: “H2 import cost”: […]</li>
-				  <li>Sensitivity 5: “CO2 export capacity”: […]</li>
+				  <li>Sensitivity 3: “CO2 budget”: if some CO2 emissions are allowed in 2050 (within a net-zero EU energy system), the optimal energy system in Belgium is cheaper and looks different;</li>
+				  <li>Sensitivity 4: “H2 import cost”: the cost of importing hydrogen is modified to showcase the trade-off  between imports and domestic production, possibly impacting renewable electricity deployment;</li>
+				  <li>Sensitivity 5: “CO2 export capacity”: the capacity to export CO2 by pipeline impacts the deployment of renewable electricity and the import of green energy.</li>
 				</ul>
 			</p>
+			<p>The final section “All data” in the “Simulations” section provides all data of the base case and sensitivities with all details provided for the base case.</p>
 			<h2>Notes</h2>
 			<p>
 				[add note to TYNDP 2022 of ENTSOG-ENTSO-E]

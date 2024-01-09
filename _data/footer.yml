@@ -20,7 +20,4 @@
     link: https://www.fluxys.com/#/
     social_icon: website
     new_window: true
-  - name: Contact
-    social_icon: contact
-    link: /contact/
-    new_window: false
+
